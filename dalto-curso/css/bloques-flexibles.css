@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bloque {
+    display: inline-block;
+    /* min-width: 200px; */
+    width: 100%;
+    background-color: #7bf;
+    margin: auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+}
+
+.flex-box-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-box-video {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video {
+    max-width: 100%;
+}

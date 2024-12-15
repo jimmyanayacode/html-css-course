@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/picture-source-media.css">
+</head>
+<body>
+    <picture>
+        <source srcset="./img/dalto.webp" type="image/webp">
+        <source media="(max-width: 400px )" srcset="./img/dalto-small.png">
+        <source media="(max-width: 600px )" srcset="./img/dalto-medium.png">
+        <img src="./img/dalto-original.jpg">
+    </picture>
+</body>
+</html>

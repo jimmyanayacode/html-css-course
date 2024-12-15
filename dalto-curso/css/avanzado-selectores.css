@@ -1,0 +1,47 @@
+/* Selectores de atributo */
+
+/* ! Selector que cumpla exactamente con el valor url*/
+/* img[src="./img/position.png"] {
+    width: 200px;
+} */
+
+/* ! Selector que cumple con el formato de la imagen*/
+/* img[src$="png"] {
+    width: 200px;
+} */
+
+/* ! Selector que cumple con el nombre sin el formato*/
+img[src^="./img/position"] {
+    width: 200px;
+}
+
+/* Selectores descendentes */
+
+ul li {
+    color: #666;
+}
+
+ul li strong {
+    color: red;
+}
+
+/* ! Selector por hijo directo */
+
+ul > em li {
+    color: green 
+}
+
+/* ! Selector adyacente */
+h1 + p {
+    color: blue;
+}
+
+/* ! Selector de hermanos generales */
+h1 ~ p {
+    color: gray;
+}
+
+h1 {
+    color: green !important
+}
+/* Herencia */

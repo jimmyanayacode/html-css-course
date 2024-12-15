@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal: #4ff
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    --tamano-principal: 1.2rem;
+    --alto-del-box: 250px
+}
+
+.box {
+    /* display: grid;
+    place-content: center; */
+    color: #fff;
+    font-size: 40px;
+    width: calc(50% + 500px);
+    margin: auto; 
+    font-size: 30px;
+    padding: 0 20px;
+    /* width: min(900px, 100%); */
+    /* width: clamp(750px, 100%, 1200px); */
+    font-size: clamp(var(--tamano-principal),2vw,4rem);
+    border: 6px solid #000;
+}
+
+.box:first-child {
+    background-color: var(--color-principal);
+    height: var(--alto-del-box);
+}
+
+.box:nth-child(2) {
+    color: firebrick;
+    border: 3px solid var(--color-principal);
+    height: calc(100vh - var(--alto-del-box));
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #48e #fff;
+    scrollbar-width: thin;
+}
+
+.box p::first-letter {
+    initial-letter: 3 3;
+    color: orange;
+}
+
+@property --color-principal {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #48e;
+}

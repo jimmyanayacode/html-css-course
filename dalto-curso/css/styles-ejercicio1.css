@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    color: #FFF;
+    margin: 0;
+}
+
+/* .cards {
+    display: flex;
+} */
+
+.card {
+    text-align: center;
+    width: 350px;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 25px #0007;
+}
+
+.card .card_img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px #BBB;
+}
+
+.card_title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.card_subtitle {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card .card_content {
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: justify;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.card-uno{
+    background: linear-gradient(to left, #77acea, #7adc) ;
+}
+
+.card-two {
+    background: linear-gradient(to left, #b64, #b53c) ;;
+}
+
+.card-three {
+    background: linear-gradient(to left, #1a6, #192c) ;;
+}

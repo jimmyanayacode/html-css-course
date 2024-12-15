@@ -1,0 +1,42 @@
+* {
+    box-sizing:content-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.containerPadre {
+    position: relative;
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 30rem;
+
+} 
+
+.containerhijo {
+    position: absolute;
+    background-color: greenyellow;
+    width: 20rem;
+    height: 15rem;
+}
+
+#containerhijo1 {
+    top: 150px;
+}
+
+#containerhijo2{
+    top: 250px;
+    left: 250px;
+}
+
+#containerhijo3 {
+    top: 150px;
+    right: 0;
+}
+
+.containerhijoFixed {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: yellow;
+}

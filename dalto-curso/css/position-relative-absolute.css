@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 10px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.box--orange {
+    top: 110px;
+    left: 90px;
+    z-index: 4;
+}
+
+.box--blue {
+    background-color: blue;
+    top: 50px;
+    left: 40px;
+    z-index: 3;
+  
+}
+.box--red {
+    background-color: red;
+}
+
+.container {
+    border: 1px solid #000;
+    margin: 20px;
+    position: relative;
+}
+
+.box--green {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.box--pink {
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}

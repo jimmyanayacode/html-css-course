@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagína de venta de fruta</title>
+    <link rel="icon" href="./img/descarga.jpg" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="description" content="Esta pagina web se trata de bla bla bla y también se trata de bla bla bla">
+    <meta name="keywords" content="frutas, fruta, verduras, verdura">
+    <meta name="author" content="Jimmy Anaya">
+    <meta name="robots" content="noarchive">
+</head>
+<body class="body-text-area">
+    <form action="">
+        <h2>Formulario de contacto</h2>
+        <!-- SIMPLE INPUTS -->
+         <fieldset>
+            <legend>Información básica</legend>
+            <div class="form_input-text-area">
+                <label for="nameUser">Nombre usuario</label>
+                <input type="text" placeholder="John Doe" id="nameUser">
+            </div>
+            <div class="form_input-text-area">
+                <label for="edadUser">Edad usuario</label>
+                <input type="number" placeholder="24" id="edadUser">
+            </div>
+         </fieldset>
+        <fieldset>
+            <legend>Información de contacto</legend>
+            <div class="form_input-text-area">
+                <label for="emailUser">Email</label>
+                <input type="email" placeholder="johndoe@gmail.com" id="emailUser">
+            </div>
+            <div class="form_input-text-area">
+                <label for="numberPhoneUser">Número telefoníco</label>
+                <input type="number" placeholder="323225170" id="numberPhoneUser">
+            </div>
+        </fieldset>
+        
+        <!-- SELECT AND OPTIONS -->
+        <div class="form_input-text-area">
+            <label>Tipo de usuario
+            <select name="type-of-user">
+                <option value="user1">Seguidor/a</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Otros</option>
+            </select>
+            </label>
+        </div>
+
+        <!-- DATA LIST AND OPTIONS -->
+        <div class="form_input-text-area">
+            <label>Referente
+            <input list="referente" name="referente">
+            <datalist id="referente" name="type-of-user">
+                <option value="user1">Seguidor/a</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Otros</option>
+            </datalist>
+            </label>
+        </div>
+        
+        <!-- TEXTAREA -->
+        <div class="form_input-text-area">
+            <label for="messageUser">Mensaje</label>
+            <textarea rows="3" id="messageUser" placeholder="Deja tu mensaje..."></textarea>
+        </div>
+        
+        <!-- CHECKBOX -->
+        <div class="form_input-text-area">
+            <label>Acepto los <a href="terms.html" target="blank">terminos y condiciones</a>
+                <input class="checkbox" type="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

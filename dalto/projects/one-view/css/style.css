@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    --bg-color: #ff9464;
+    --chat-bg-color: #333;
+    --dark-color: rgb(255, 130, 77);
+    
+}
+
+body, div, ul, li, a, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: var(--bg-color); */
+    height: 200vh;
+    background-image: url("../img/fondo-smoke.gif");
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: difference;
+}
+
+.text-container {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    font-size: clamp(1rem, 9vw, 10rem);
+    color: var(--chat-bg-color);
+    font-weight: 600;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 2vw;
+
+    animation: aparecer-texto both;
+    animation-timeline: scroll();
+    animation-range-start: cover 20%;
+}
+
+.left-text {
+    color: var(--dark-color);
+    filter: drop-shadow(0px 0px 1px var(--dark-color))
+    drop-shadow(0px 0px 9px var(--dark-color));
+}
+
+.right-text {
+    font-weight: 900;
+}
+
+img {
+    filter: grayscale();
+    mix-blend-mode: darken;
+    position: fixed;
+    top: 0;
+    animation: aparecer both;
+    animation-timeline: scroll();
+    max-height: 100vh;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        translate: 0 -20%;
+        scale: .7;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+@keyframes aparecer-texto {
+    0% {
+        opacity: 0;
+        translate: 0 20%;
+        scale: 2;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .text-container {
+        justify-content: space-evenly;
+    }
+}

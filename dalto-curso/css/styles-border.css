@@ -1,0 +1,62 @@
+.container {
+    background-color: red;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+
+    /* border-width: 3px;
+    border-color: orange;
+    border-style: solid; */
+
+    border: 20px solid green;
+
+    border-radius: 10px;
+}
+
+form {
+    background-color: black;
+    width: 800px;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px  solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.box-old {
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new {
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        color: blue;
+    }
+    
+}

@@ -1,0 +1,145 @@
+.contenedora {
+    width: 90%;
+    background-color: lightgray;
+    border-radius: .5rem;
+    margin: 1em auto
+}
+
+.item {
+    background-color: darkorange;
+    border-radius: 5px;
+}
+
+/* Como centrar un text */
+.contenedora1 {
+    text-align: center;
+    padding: 5em 0;
+}
+
+.contenedora2 .item {
+    width: 40%;
+    margin: auto;
+}
+
+.contenedora3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contenedora3 .item {
+    width: calc(25% - 2em);
+    float: left;
+    margin: 0 1em;
+}
+
+.contenedora4 {
+    padding: 5em 0;
+}
+
+.contenedora5 {
+    padding: 5em 0;
+}
+
+.contenedora5::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contenedora5 .item {
+    width: calc(25% - 2em);
+    float: left;
+    margin: 0 1em;
+}
+
+.contenedora6{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedora6 .item{
+    width: 33%;
+    margin: 0 1em;
+}
+
+.contenedora7{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedora7 .item{
+    width: 20%;
+}
+
+.contenedora8 {
+    min-height: 10vh;
+    position: relative;
+}
+
+.contenedora8 .item {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.5em;
+}
+
+.contenedora9 {
+    min-height: 10vh;
+    position: relative;
+}
+
+.contenedora9 .item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.contenedora10 {
+    min-height: 15vh;
+    position: relative;
+}
+
+.contenedora10 .item {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.contenedora12 {
+    min-height: 15vh;
+    position: relative;
+}
+
+.contenedora12 .item{
+width: 50%;
+height: 60%;
+position: absolute;
+left: 25%;
+top: 20%;
+}
+
+.contenedor13 {
+    min-height: 15vh;
+    position: relative;
+}
+
+.contenedor13 .item {
+    width: 60%;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}

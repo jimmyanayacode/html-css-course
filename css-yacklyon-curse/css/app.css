@@ -1,0 +1,63 @@
+.uno {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#b1 {
+    border-radius: 25px;
+    background-color: greenyellow;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#b2 {
+    border-radius: 25px;
+    border: 2px solid blueviolet;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#b3 {
+    color: white;
+    border-radius: 25px;
+    background-image: url('../img/media-queries.png');
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+#b4 {
+    background-color: red;
+    border-radius: 25px 50px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+} 
+
+#b {
+    width: 250px;
+    height: 200px;
+    margin: 5px auto;
+    padding: 15px ;
+    border-image-source: url(../img/png-transparent-frame-gold-frame-gold-frame-rectangular-brown-ornate-frame-frame-golden-frame-trendy-frame-thumbnail.png);
+    border-image-slice: 25%;
+    border-image-repeat: repeat round;
+    border-image-width: 80px;
+    border-image-outset: 30px;
+    text-align: center;
+}
+
+#fondo {
+    padding: 25px;
+    border: 12px solid red;
+    width: 340px;
+    height: 280px;
+    margin: 0 auto;
+    background: url(../img/pngtree-colorful-butterfly-butterfly-pink-blue-png-image_3977122.jpg) top  / 150px no-repeat,
+    url(../img/pngtree-butterfly-pink-purple-png-beautiful-png-image_1004569.jpg) left  / 100px no-repeat;
+}
